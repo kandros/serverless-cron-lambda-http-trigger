@@ -1,0 +1,15 @@
+service: my-lambda-cron-http-trigger
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: eu-central-1
+
+functions:
+  functionName:
+    handler: handler.run
+    environment:
+      URL: YOUR_URL
+    events:
+      # Invoke Lambda function every day at 9:30am
+      - schedule: cron(30 9 * * ? *)
