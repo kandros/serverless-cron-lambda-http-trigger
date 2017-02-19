@@ -1,5 +1,5 @@
 {
-  "name": "aws-scheduled-cron",
+  "name": "serverless-cron-lambda-http-trigger",
   "version": "1.0.0",
   "description": "Example of creating a function that runs as a cron job using the serverless `schedule` event",
   "author": "",
